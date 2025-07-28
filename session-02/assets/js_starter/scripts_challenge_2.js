@@ -7,11 +7,24 @@ let array2 = [4, 5, 6, 4];
 let mergedArray = [...array1, ...array2];
 
 // Use the Set object to remove duplicates
-let uniqueArray = [...new Set(mergedArray)];
+let mySet = new Set(mergedArray); // let mySet = new Set([...array1, ...array2])
 
 // Use array destructuring to assign the first three elements to variables
-let [firstElement, secondElement, thirdElement] = uniqueArray;
+let [firstItem, secondItem, thirdItem, ...others] = mySet;
+
+// Set the value of the output filed to be the second element of the unique array
+let outputField = document.getElementById("OutputField");
+
+outputField.innerHTML = secondItem;
+let uniqueArray = [...new Set(mergedArray)];
+let mySet = new Set(mergedArray); // let mySet = new Set([...array1, ...array2])
+
+// Use array destructuring to assign the first three elements to variables
+let [firstItem, secondItem, thirdItem, ...others] = mySet;
 
 // Set the value of the output filed to be the second element of the unique array
 let outputField = document.getElementById("OutputField");
 outputField.innerHTML = secondElement;
+let outputField = document.getElementById("OutputField");
+
+outputField.innerHTML = secondItem;
