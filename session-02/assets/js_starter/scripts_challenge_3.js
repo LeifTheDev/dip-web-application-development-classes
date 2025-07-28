@@ -140,6 +140,7 @@ users = [
     isEmployed: true,
   },
 ];
+
 // Check if the array includes the number 5
 let filterUsers = users.filter((user) => user.skills[0] === "JavaScript");
 
