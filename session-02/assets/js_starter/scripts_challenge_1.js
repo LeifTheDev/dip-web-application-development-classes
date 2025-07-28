@@ -7,6 +7,9 @@ let numbersCopy = [...numbers];
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9819a26 (feat: Week 2 activity 2)
 let lastElement = numbers.pop();
 
 // Use the unshift() method to add the last element to the beginning of the array
@@ -19,10 +22,13 @@ let newArray = numbers.slice(3);
 let outField = document.getElementById("Output field");
 outputField.innerHTML = newArray;
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 5ffc780 (feat: session 2)
 =======
 >>>>>>> 323c808 (feat: Week 2 activity 2)
+=======
+>>>>>>> 9819a26 (feat: Week 2 activity 2)
 let deletedNumber = numbersCopy.pop();
 
 // Use the unshift() method to add the last element to the beginning of the array
@@ -35,6 +41,7 @@ let outputNumbers = numbersCopy.slice(3);
 let outputField = document.getElementById("OutputField");
 
 outputField.innerHTML = outputNumbers;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> bea7e64 (feat: Week 2 activity 2)
@@ -61,3 +68,6 @@ outputField.innerHTML = newArray;
 >>>>>>> 5ffc780 (feat: session 2)
 =======
 >>>>>>> 323c808 (feat: Week 2 activity 2)
+=======
+>>>>>>> bea7e64 (feat: Week 2 activity 2)
+>>>>>>> 9819a26 (feat: Week 2 activity 2)
