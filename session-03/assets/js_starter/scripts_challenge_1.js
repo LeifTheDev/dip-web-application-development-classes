@@ -16,6 +16,14 @@ const userObject = {
   },
   isEmployed: true,
 
+  setAge: function (newAge) {
+    if (!typeof newAge === "number") {
+      return false;
+    }
+    this.age = newAge;
+    return true;
+  },
+
   // Method to change the age property
 };
 

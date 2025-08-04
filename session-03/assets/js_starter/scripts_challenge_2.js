@@ -36,8 +36,17 @@ function deepClone(obj) {
 // const clone2 = deepClone(complexObject);
 // const clone3 = deepClone(complexObject);
 
+// let complexObject2 = { ...userObject };
+// let complexObject3 = { ...userObject };
+// let complexObject4 = { ...userObject };
 // Store the cloned objects in an array
 const clonedObjects = [clone1, clone2, clone3];
+
+let cloneArray = Array(3)
+  .fill()
+  .map(() => {
+    return { ...userObject };
+  });
 
 // Sort the array of cloned objects based on the 'age' property in ascending order
 clonedObjects.sort((a, b) => a.age - b.age);
