@@ -1,6 +1,5 @@
 import multiply, { add, subtract, divide as myDivide } from "./math.js";
 
-<<<<<<< HEAD
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
 // console.log(myDivide(6, 3)); // 2
@@ -24,7 +23,7 @@ show
       .join("")}
       </ol>`)
   : `<div>Nothing to show</div>`;
-=======
+
 let outputSection = document.getElementById("results");
 
 // Class not required in this case, should just be a function really. (Class used for syntax practice)
@@ -50,4 +49,3 @@ renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
->>>>>>> 9d8403c (feat: Session 4 activity 1)
