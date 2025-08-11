@@ -9,10 +9,18 @@ let prefix = "autosave_";
  * @param  {Event} event The event object
  */
 function inputHandler(event) {
+<<<<<<< HEAD
   // save the event target
   let field = event.target;
 
   localStorage.setItem(prefix + field.id, field.value);
+=======
+  localStorage.setItem(prefix + event.target.id, event.target.value);
+  // switch (event.target.id) {
+  //   case "name": {
+  //   }
+  // }
+>>>>>>> ddc3c41 (feat: Form data local storage activity)
 }
 
 /**
@@ -30,18 +38,17 @@ function clearStorage() {
  * Load saved data from localStorage
  */
 function loadSaved() {
-  //
   let fields = form.elements;
 
   for (let field of fields) {
     let saved = localStorage.getItem(prefix + field.id);
 
-    if (saved) {
-      field.value = saved;
-    }
+    if (!saved) continue;
+    field.value = saved;
   }
 }
 
+// Load saved data from localStorage
 loadSaved();
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
