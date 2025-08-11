@@ -54,11 +54,15 @@ function loadSaved() {
     let saved = localStorage.getItem(prefix + field.id);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     if (!saved) continue;
     field.value = saved;
 =======
+=======
+
+>>>>>>> 118da3d (feat: update to JR answer and LB variation)
     if (saved) {
       field.value = saved;
     }
@@ -72,6 +76,7 @@ function loadSaved() {
   }
 }
 
+<<<<<<< HEAD
 // Load saved data from localStorage
 <<<<<<< HEAD
 loadSaved();
@@ -79,6 +84,9 @@ loadSaved();
 =======
 function loadSaved() {}
 >>>>>>> f8dffb3 (feat: input handler)
+=======
+loadSaved();
+>>>>>>> 118da3d (feat: update to JR answer and LB variation)
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
 form.addEventListener("submit", clearStorage);
