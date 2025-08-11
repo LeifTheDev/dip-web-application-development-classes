@@ -1,5 +1,6 @@
-import multiply, { add, subtract, divide as myDivide } from "./math.js";
+import { add, subtract } from "./math.js";
 
+<<<<<<< HEAD
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
 // console.log(myDivide(6, 3)); // 2
@@ -73,3 +74,7 @@ renderResult(`Divide: ${myDivide(20, 4)}`);
 =======
 >>>>>>> 76df78d64432fb40257d7c068591ee3efdcd5bb8
 >>>>>>> 84b3aba56cacd8690594e54e793c011963277c00
+=======
+console.log(add(3, 2)); // 5
+console.log(subtract(5, 2)); // 3
+>>>>>>> 8ad8e49 (feat: tidy up web storage form)
