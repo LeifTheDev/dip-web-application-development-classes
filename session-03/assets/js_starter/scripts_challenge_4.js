@@ -47,7 +47,6 @@ function loadSaved() {
 
 // Load saved data from localStorage
 loadSaved();
-
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
 form.addEventListener("submit", clearStorage);
