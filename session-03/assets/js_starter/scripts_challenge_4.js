@@ -9,9 +9,14 @@ let prefix = "autosave_";
  * @param  {Event} event The event object
  */
 function inputHandler(event) {
+  localStorage.setItem(prefix + event.target.id, event.target.value);
+  // switch (event.target.id) {
+  //   case "name": {
+  //   }
+  // }
+
   // save the event target
   let field = event.target;
-
   localStorage.setItem(prefix + field.id, field.value);
 }
 
@@ -40,6 +45,7 @@ function loadSaved() {
   }
 }
 
+// Load saved data from localStorage
 loadSaved();
 
 // Listen for DOM events
