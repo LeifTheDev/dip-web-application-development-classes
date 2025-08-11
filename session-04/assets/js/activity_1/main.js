@@ -1,5 +1,6 @@
-import { add, subtract } from "./math.js";
+import multiply, { add, subtract, divide as myDivide } from "./math.js";
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
@@ -31,6 +32,8 @@ show
 =======
 >>>>>>> 84b3aba56cacd8690594e54e793c011963277c00
 
+=======
+>>>>>>> 1a44c85 (feat: Session 4 activity 1)
 let outputSection = document.getElementById("results");
 
 // Class not required in this case, should just be a function really. (Class used for syntax practice)
@@ -53,13 +56,17 @@ function renderResult(value) {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 00ef7f8 (docs: Add activity comment)
 =======
 >>>>>>> 84b3aba56cacd8690594e54e793c011963277c00
+=======
+>>>>>>> 1a44c85 (feat: Session 4 activity 1)
 renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -78,3 +85,5 @@ renderResult(`Divide: ${myDivide(20, 4)}`);
 console.log(add(3, 2)); // 5
 console.log(subtract(5, 2)); // 3
 >>>>>>> 8ad8e49 (feat: tidy up web storage form)
+=======
+>>>>>>> 1a44c85 (feat: Session 4 activity 1)
