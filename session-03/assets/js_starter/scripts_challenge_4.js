@@ -14,6 +14,11 @@ function inputHandler(event) {
   //   case "name": {
   //   }
   // }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+>>>>>>> 288b0e2 (feat: Form data local storage activity)
   // save the event target
   let field = event.target;
   localStorage.setItem(prefix + field.id, field.value);
@@ -22,6 +27,8 @@ function inputHandler(event) {
   //   case "name": {
   //   }
   // }
+=======
+>>>>>>> ddc3c41 (feat: Form data local storage activity)
 }
 
 /**
@@ -43,11 +50,26 @@ function loadSaved() {
 
   for (let field of fields) {
     let saved = localStorage.getItem(prefix + field.id);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    if (!saved) continue;
+    field.value = saved;
+=======
+    if (saved) {
+      field.value = saved;
+    }
+>>>>>>> ddc3c41 (feat: Form data local storage activity)
+>>>>>>> 288b0e2 (feat: Form data local storage activity)
   }
 }
 
 // Load saved data from localStorage
 loadSaved();
+<<<<<<< HEAD
+=======
+
+>>>>>>> ddc3c41 (feat: Form data local storage activity)
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
 form.addEventListener("submit", clearStorage);
