@@ -15,6 +15,7 @@ let results = [add_result, subtract_result, divide_result, multiply_result];
 
 let app = document.getElementById("results");
 
+<<<<<<< HEAD
 let show = true;
 
 show
@@ -23,3 +24,11 @@ show
       .join("")}
       </ol>`)
   : `<div>Nothing to show</div>`;
+=======
+renderResult(`Multiply: ${multiply(3, 4)}`);
+renderResult(`Add: ${add(3, 4)}`);
+renderResult(`Subtract: ${subtract(4, 1)}`);
+renderResult(`Divide: ${myDivide(20, 4)}`);
+
+// Potentially falling into the habit of overengineering - function/class use was not necessary
+>>>>>>> 2882e43 (docs: Add activity comment)
