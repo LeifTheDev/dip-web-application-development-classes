@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import multiply, { add, subtract, divide as myDivide } from "./math.js";
 
 // console.log(add(3, 2)); // 5
@@ -24,9 +23,3 @@ show
       .join("")}
       </ol>`)
   : `<div>Nothing to show</div>`;
-=======
-import { add, subtract } from "./math.js";
-
-console.log(add(3, 2)); // 5
-console.log(subtract(5, 2)); // 3
->>>>>>> 62f9b87 (feat: tidy up web storage form)
