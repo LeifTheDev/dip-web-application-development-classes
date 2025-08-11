@@ -2,6 +2,7 @@ import multiply, { add, subtract, divide as myDivide } from "./math.js";
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
 // console.log(myDivide(6, 3)); // 2
@@ -34,6 +35,8 @@ show
 
 =======
 >>>>>>> 1a44c85 (feat: Session 4 activity 1)
+=======
+>>>>>>> 503a6fd (activty 1 update)
 let outputSection = document.getElementById("results");
 
 // Class not required in this case, should just be a function really. (Class used for syntax practice)
@@ -71,10 +74,15 @@ renderResult(`Divide: ${myDivide(20, 4)}`);
 <<<<<<< HEAD
 
 // Potentially falling into the habit of overengineering - function/class use was not necessary
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 503a6fd (activty 1 update)
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
 // console.log(myDivide(6, 3)); // 2
 // console.log(multiply(6, 2)); // 12
+<<<<<<< HEAD
 =======
 >>>>>>> 00ef7f8 (docs: Add activity comment)
 =======
@@ -87,3 +95,25 @@ console.log(subtract(5, 2)); // 3
 >>>>>>> 8ad8e49 (feat: tidy up web storage form)
 =======
 >>>>>>> 1a44c85 (feat: Session 4 activity 1)
+=======
+
+let add_result = add(3, 2); // 5
+let subtract_result = subtract(5, 2); // 3
+let divide_result = myDivide(6, 3); // 2
+let multiply_result = multiply(6, 2); // 12
+
+let results = [add_result, subtract_result, divide_result, multiply_result];
+// results = [add(3, 2), subtract(5, 2), myDivide(6, 3), multiply(6, 2)];
+
+let app = document.getElementById("result_list");
+
+let show = true;
+
+show
+  ? (app.innerHTML = `<ol>${results
+      .map((result) => `<li>${result}</li>`)
+      .join("")}
+      </ol>`)
+  : `<div>Nothing to show</div>`;
+>>>>>>> 251ea2d (activty 1 update)
+>>>>>>> 503a6fd (activty 1 update)
