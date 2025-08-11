@@ -9,11 +9,7 @@ let prefix = "autosave_";
  * @param  {Event} event The event object
  */
 function inputHandler(event) {
-  localStorage.setItem(prefix + event.target.id, event.target.value);
-  // switch (event.target.id) {
-  //   case "name": {
-  //   }
-  // }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -22,13 +18,19 @@ function inputHandler(event) {
   // save the event target
   let field = event.target;
   localStorage.setItem(prefix + field.id, field.value);
+=======
+>>>>>>> 74bcb75 (feat: input handler)
   localStorage.setItem(prefix + event.target.id, event.target.value);
   // switch (event.target.id) {
   //   case "name": {
   //   }
   // }
 =======
->>>>>>> ddc3c41 (feat: Form data local storage activity)
+  // save the event target
+  let field = event.target;
+
+  localStorage.setItem(prefix + field.id, field.value);
+>>>>>>> f8dffb3 (feat: input handler)
 }
 
 /**
@@ -51,6 +53,7 @@ function loadSaved() {
   for (let field of fields) {
     let saved = localStorage.getItem(prefix + field.id);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
     if (!saved) continue;
@@ -61,15 +64,21 @@ function loadSaved() {
     }
 >>>>>>> ddc3c41 (feat: Form data local storage activity)
 >>>>>>> 288b0e2 (feat: Form data local storage activity)
+=======
+    if (saved) {
+      field.value = saved;
+    }
+>>>>>>> 74bcb75 (feat: input handler)
   }
 }
 
 // Load saved data from localStorage
-loadSaved();
 <<<<<<< HEAD
-=======
+loadSaved();
 
->>>>>>> ddc3c41 (feat: Form data local storage activity)
+=======
+function loadSaved() {}
+>>>>>>> f8dffb3 (feat: input handler)
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
 form.addEventListener("submit", clearStorage);
