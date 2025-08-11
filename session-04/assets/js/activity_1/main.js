@@ -25,3 +25,5 @@ renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
+
+// Potentially falling into the habit of overengineering - function/class use was not necessary
