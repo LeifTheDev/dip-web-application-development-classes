@@ -24,13 +24,41 @@ show
       .join("")}
       </ol>`)
   : `<div>Nothing to show</div>`;
+<<<<<<< HEAD
+=======
+
+let outputSection = document.getElementById("results");
+
+// Class not required in this case, should just be a function really. (Class used for syntax practice)
+class DisplayTemplate {
+  parse = function (value) {
+    let parser = new DOMParser();
+    return parser.parseFromString(`<p>${value} - Template Used<p>`, "text/html")
+      .body.firstChild;
+    // let element = document.createElement("");
+    // element.innerHTML = `<p>${this.value}<p>`;
+    // return element;
+  };
+}
+
+let templateGenerator = new DisplayTemplate();
+
+function renderResult(value) {
+  let node = templateGenerator.parse(value);
+  outputSection.appendChild(node);
+}
+
+>>>>>>> 00ef7f8 (docs: Add activity comment)
 renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
+<<<<<<< HEAD
 
 // Potentially falling into the habit of overengineering - function/class use was not necessary
 // console.log(add(3, 2)); // 5
 // console.log(subtract(5, 2)); // 3
 // console.log(myDivide(6, 3)); // 2
 // console.log(multiply(6, 2)); // 12
+=======
+>>>>>>> 00ef7f8 (docs: Add activity comment)
