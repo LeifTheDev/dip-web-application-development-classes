@@ -35,20 +35,14 @@ function loadSaved() {
 
   for (let field of fields) {
     let saved = localStorage.getItem(prefix + field.id);
+
     if (saved) {
       field.value = saved;
     }
   }
 }
 
-// Load saved data from localStorage
-function loadSaved() {
-    if (!saved) {continue };
-    field.value = saved;
-}
-
 loadSaved();
-
 // Listen for DOM events
 form.addEventListener("input", inputHandler);
 form.addEventListener("submit", clearStorage);
