@@ -23,6 +23,7 @@ show
       .join("")}
       </ol>`)
   : `<div>Nothing to show</div>`;
+<<<<<<< HEAD
 
 let outputSection = document.getElementById("results");
 
@@ -49,3 +50,5 @@ renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
+=======
+>>>>>>> 76df78d64432fb40257d7c068591ee3efdcd5bb8

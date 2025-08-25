@@ -45,8 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     })
       // Challenge 3
-      // 1. change the anonymous arrow function below to check if the response code is 200(ok)
-      // 2. if the response is ok return the response.json() object
+
       // 3. if not ok throw a new error which includes the status code
       // 4. Test the responses in the Network tab
       .then((response) => {
