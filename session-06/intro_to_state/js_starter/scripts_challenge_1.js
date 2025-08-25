@@ -4,6 +4,13 @@
 // data
 
 // Get the list
+var addBook = function (book) {
+  if (!book || book.length < 1) return;
+  var list = document.querySelector("#list");
+  var listItem = document.createElement("li");
+  listItem.textContent = book;
+  list.appendChild(listItem);
+};
 
 // Create a new list item
 // template
