@@ -8,6 +8,7 @@ let addBook = function (book) {
   // Create a new list item
   let list = document.querySelector("#list");
 
+<<<<<<< HEAD
   // template
   let listItem = document.createElement("li");
   // Append the item to the list
@@ -15,6 +16,22 @@ let addBook = function (book) {
   // render
   list.appendChild(listItem);
 };
+=======
+// Get the list
+var addBook = function (book) {
+  if (!book || book.length < 1) return;
+  var list = document.querySelector("#list");
+  var listItem = document.createElement("li");
+  listItem.textContent = book;
+  list.appendChild(listItem);
+};
+
+// Create a new list item
+// template
+
+// Append the item to the list
+// render
+>>>>>>> 84b3aba (feat: Introduction to state tutorials)
 
 let book = "Harry Potter IV";
 let book1 = "Harry Potter III";
