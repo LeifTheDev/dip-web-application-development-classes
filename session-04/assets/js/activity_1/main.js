@@ -25,7 +25,10 @@ show
       </ol>`)
   : `<div>Nothing to show</div>`;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 84b3aba56cacd8690594e54e793c011963277c00
 
 let outputSection = document.getElementById("results");
 
@@ -48,11 +51,15 @@ function renderResult(value) {
   outputSection.appendChild(node);
 }
 
+<<<<<<< HEAD
 >>>>>>> 00ef7f8 (docs: Add activity comment)
+=======
+>>>>>>> 84b3aba56cacd8690594e54e793c011963277c00
 renderResult(`Multiply: ${multiply(3, 4)}`);
 renderResult(`Add: ${add(3, 4)}`);
 renderResult(`Subtract: ${subtract(4, 1)}`);
 renderResult(`Divide: ${myDivide(20, 4)}`);
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 // Potentially falling into the habit of overengineering - function/class use was not necessary
@@ -62,3 +69,7 @@ renderResult(`Divide: ${myDivide(20, 4)}`);
 // console.log(multiply(6, 2)); // 12
 =======
 >>>>>>> 00ef7f8 (docs: Add activity comment)
+=======
+=======
+>>>>>>> 76df78d64432fb40257d7c068591ee3efdcd5bb8
+>>>>>>> 84b3aba56cacd8690594e54e793c011963277c00

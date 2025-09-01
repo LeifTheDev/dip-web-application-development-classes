@@ -14,7 +14,6 @@ function inputHandler(event) {
   //   case "name": {
   //   }
   // }
-
   // save the event target
   let field = event.target;
   localStorage.setItem(prefix + field.id, field.value);
@@ -44,8 +43,6 @@ function loadSaved() {
 
   for (let field of fields) {
     let saved = localStorage.getItem(prefix + field.id);
-    if (!saved) continue;
-    field.value = saved;
   }
 }
 
