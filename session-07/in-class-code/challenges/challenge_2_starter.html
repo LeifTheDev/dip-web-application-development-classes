@@ -6,21 +6,31 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <!-- Babel Script -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/jsx">
-      const domNode = document.getElementById('app');
+    <!-- <script type="text/jsx"></script> -->
+    <script type="text/babel">
+      const domNode = document.getElementById("app");
       const root = ReactDOM.createRoot(domNode);
       root.render(<App />);
 
       function ItemList({ items }) {
         //template
         return (
-          <ol>
-            {items.map((item)=> (
-                <li key={item.id}>{item.title}</li>
-              ))}
-          </ol>
+          // <ol>
+          //   {items.map((item) => (
+          //     <li key={item.id}>{item.title}</li>
+          //   ))}
+          // </ol>
+          // <ul>{items.map((item) => displayOneItem(item.id, item.title))}</ul>
+          <ul>{items.map((item) => displayOneItem(item.id, item.title))}</ul>
         );
       }
+
+      const displayOneItem = (id, title) => (
+        <li key={id}>
+          <h2>{id}</h2>
+          <p>{title}</p>
+        </li>
+      );
 
       // Usage example
       function App() {
@@ -28,12 +38,13 @@
           { id: 1, title: "First Item" },
           { id: 2, title: "Second Item" },
           { id: 3, title: "Third Item" },
+          { id: 4, title: "Fourth Item" },
         ];
 
         // Your code goes here to return JSX
         // Hint: you will need to loop through these items
         // render
-        return <ItemList items={items} />
+        return <ItemList items={items} />;
       }
     </script>
   </body>
