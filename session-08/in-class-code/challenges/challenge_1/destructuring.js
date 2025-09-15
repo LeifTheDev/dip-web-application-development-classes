@@ -20,11 +20,11 @@ const userObject = {
 const {
   firstName,
   lastName,
-  age: yearsOld,
+  age,
   isStudent,
   address,
   skills,
-  socialProfiles: {},
+  socialProfiles,
   isEmployed,
 } = userObject;
 
@@ -34,15 +34,15 @@ const twitterHandle = socialProfiles.twitter;
 
 const greeting =
   "Hello, my name is " +
-  firstname +
+  firstName +
   " " +
-  lastname +
+  lastName +
   ". I am " +
-  yearsOld +
+  age +
   " years old, living on " +
   street +
   ". You can find me on Twitter as " +
-  twitterhandle +
+  twitterHandle +
   ".";
 
 console.log(greeting);
